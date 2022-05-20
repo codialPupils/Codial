@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="uz.codial6.codial.fragments.singup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_enterCodeFragment"
+            app:destination="@id/enterCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.codial6.codial.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_listOfCoursesFragment"
+            app:destination="@id/listOfCoursesFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterCodeFragment"
+        android:name="uz.codial6.codial.fragments.singup.EnterCodeFragment"
+        android:label="fragment_enter_code"
+        tools:layout="@layout/fragment_enter_code" >
+        <action
+            android:id="@+id/action_enterCodeFragment_to_userDataFragment"
+            app:destination="@id/userDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDataFragment"
+        android:name="uz.codial6.codial.fragments.singup.UserDataFragment"
+        android:label="fragment_user_data"
+        tools:layout="@layout/fragment_user_data" >
+        <action
+            android:id="@+id/action_userDataFragment_to_listOfCoursesFragment"
+            app:destination="@id/listOfCoursesFragment"
+            app:popUpTo="@id/userDataFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfCoursesFragment"
+        android:name="uz.codial6.codial.fragments.courses.ListOfCoursesFragment"
+        android:label="fragment_list_of_courses"
+        tools:layout="@layout/fragment_list_of_courses" >
+        <action
+            android:id="@+id/action_listOfCoursesFragment_to_selectedCourseFragment"
+            app:destination="@id/selectedCourseFragment" />
+        <action
+            android:id="@+id/action_listOfCoursesFragment_to_ratingFragment"
+            app:destination="@id/ratingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedCourseFragment"
+        android:name="uz.codial6.codial.fragments.courses.SelectedCourseFragment"
+        android:label="fragment_selected_course"
+        tools:layout="@layout/fragment_selected_course" >
+        <action
+            android:id="@+id/action_selectedCourseFragment_to_joiningAnExistingGroupFragment"
+            app:destination="@id/joiningAnExistingGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/joiningAnExistingGroupFragment"
+        android:name="uz.codial6.codial.fragments.testing.JoiningAnExistingGroupFragment"
+        android:label="fragment_joining_an_existing_group"
+        tools:layout="@layout/fragment_joining_an_existing_group" >
+        <action
+            android:id="@+id/action_joiningAnExistingGroupFragment_to_testingFragment"
+            app:destination="@id/testingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testingFragment"
+        android:name="uz.codial6.codial.fragments.testing.TestingFragment"
+        android:label="fragment_testing"
+        tools:layout="@layout/fragment_testing" />
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="uz.codial6.codial.fragments.RatingFragment"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" />
+</navigation>

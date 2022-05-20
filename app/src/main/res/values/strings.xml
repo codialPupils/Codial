@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Codial</string>
+    <string name="royhatdan_otish">Ro`yhatdan o`tish</string>
+    <string name="hush_kelibsiz">Hush kelibsiz!</string>
+    <string name="telefon_raqami">Telefon raqami</string>
+    <string name="hello_blank_fragment">asdasdas</string>
+    <string name="maskEditTextHint">000000000</string>
+</resources>
