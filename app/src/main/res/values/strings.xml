@@ -5,4 +5,20 @@
     <string name="telefon_raqami">Telefon raqami</string>
     <string name="hello_blank_fragment">asdasdas</string>
     <string name="maskEditTextHint">000000000</string>
+    <string name="codial">Codial</string>
+    <string name="ko_dni_kiriting">Ko`dni kiriting</string>
+    <string name="kiritilgan_raqamga_sms_tarzida_tasdiqlash_ko_di_yuborildi">Kiritilgan raqamga SMS tarzida tasdiqlash ko`di yuborildi</string>
+    <string name="foydalanuvchi_ma_lumotlari">Foydalanuvchi ma`lumotlari</string>
+    <string name="ismingiz">Ismingiz</string>
+    <string name="familiyangiz">Familiyangiz</string>
+    <string name="kamera">Kamera</string>
+    <string name="galereya">Galereya</string>
+    <string name="raqamingiz_to_g_rimi">Raqamingiz to`g`rimi?</string>
+    <string name="_998996349564">+998996349564</string>
+    <string name="o_zgartirish">O`zgartirish</string>
+    <string name="ha">Ha</string>
+    <string name="raqamni_o_zgartirish">Raqamni o`zgartirish</string>
+    <string name="boshqa_raqam_kiritishni_xohlaysizmi">Boshqa raqam kiritishni xohlaysizmi?</string>
+    <string name="agar_raqam_to_g_ri_kiritilgan_bo_lsa_iltimos_tasdiqlash_ko_di_kelishini_kuting">Agar raqam to`g`ri kiritilgan bo`lsa, iltimos, tasdiqlash ko`di kelishini kuting.</string>
+    <string name="yopish">Yopish</string>
 </resources>

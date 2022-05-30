@@ -1,4 +1,4 @@
-package uz.codial6.codial.utils;
+package uz.codial6.codial.utils.MaskedEditText;
 
 import static android.content.ContentValues.TAG;
 

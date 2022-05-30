@@ -11,7 +11,7 @@
     <color name="yellow">#FFB800</color>
     <color name="splash_color">#00131C</color>
     <color name="text_color_light">#1A4E79</color>
-    <color name="text_color_night">#FFB800</color>
+    <color name="text_color_night">#FFFFFFFF</color>
     <color name="tint_color_light">#1A4E79</color>
-    <color name="tint_color_night">#FFB800</color>
+    <color name="tint_color_night">#FFFFFFFF</color>
 </resources>

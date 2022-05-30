@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_sign_up" >
         <action
             android:id="@+id/action_signUpFragment_to_enterCodeFragment"
-            app:destination="@id/enterCodeFragment" />
+            app:destination="@id/enterCodeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -29,6 +33,11 @@
             app:destination="@id/listOfCoursesFragment"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_userDataFragment"
+            app:destination="@id/userDataFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/enterCodeFragment"
@@ -37,7 +46,22 @@
         tools:layout="@layout/fragment_enter_code" >
         <action
             android:id="@+id/action_enterCodeFragment_to_userDataFragment"
-            app:destination="@id/userDataFragment" />
+            app:destination="@id/userDataFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/enterCodeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_enterCodeFragment_to_listOfCoursesFragment"
+            app:destination="@id/listOfCoursesFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/enterCodeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/userDataFragment"
@@ -47,6 +71,10 @@
         <action
             android:id="@+id/action_userDataFragment_to_listOfCoursesFragment"
             app:destination="@id/listOfCoursesFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@id/userDataFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -57,10 +85,18 @@
         tools:layout="@layout/fragment_list_of_courses" >
         <action
             android:id="@+id/action_listOfCoursesFragment_to_selectedCourseFragment"
-            app:destination="@id/selectedCourseFragment" />
+            app:destination="@id/selectedCourseFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_listOfCoursesFragment_to_ratingFragment"
-            app:destination="@id/ratingFragment" />
+            app:destination="@id/ratingFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/selectedCourseFragment"
@@ -69,7 +105,11 @@
         tools:layout="@layout/fragment_selected_course" >
         <action
             android:id="@+id/action_selectedCourseFragment_to_joiningAnExistingGroupFragment"
-            app:destination="@id/joiningAnExistingGroupFragment" />
+            app:destination="@id/joiningAnExistingGroupFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/joiningAnExistingGroupFragment"
@@ -78,7 +118,11 @@
         tools:layout="@layout/fragment_joining_an_existing_group" >
         <action
             android:id="@+id/action_joiningAnExistingGroupFragment_to_testingFragment"
-            app:destination="@id/testingFragment" />
+            app:destination="@id/testingFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/testingFragment"

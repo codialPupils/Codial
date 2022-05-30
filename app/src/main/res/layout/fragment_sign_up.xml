@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.singup.SignUpFragment">
 
+    <!--Action bar-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/action_bar"
         style="@style/ActionBarStyle"
@@ -34,99 +35,80 @@
             android:id="@+id/done"
             style="@style/TintColor"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
             android:src="@drawable/ic_done"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/scrollView"
+    <!--Logo-->
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/LogoImage"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_83sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Greeting-->
+    <TextView
+        android:id="@+id/greeting"
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/hush_kelibsiz"
+        android:textSize="@dimen/_40ssp"
+        app:layout_constraintBottom_toTopOf="@id/TIL_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <!--Input phone number-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_phone_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fillViewport="true"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:hint="@string/telefon_raqami"
+        app:boxStrokeColor="@color/text_color_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting">
+
+        <uz.codial6.codial.utils.MaskedEditText.MaskedEditText
+            android:id="@+id/MET_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/maskEditTextHint"
+            android:inputType="phone"
+            android:typeface="monospace"
+            app:allowed_chars="1234567890"
+            app:keep_hint="true"
+            app:mask="+998 (##) ###-##-##" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Progress bar-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/action_bar">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/logo"
-                style="@style/LogoImage"
-                android:layout_width="@dimen/_200sdp"
-                android:layout_height="@dimen/_83sdp"
-                android:layout_marginTop="@dimen/_50sdp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/greeting"
-                style="@style/TextColor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="@string/hush_kelibsiz"
-                android:textSize="@dimen/_40ssp"
-                app:layout_constraintBottom_toTopOf="@id/TIL_phone_number"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/logo" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/TIL_phone_number"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_60sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:hint="@string/telefon_raqami"
-                app:boxStrokeColor="@color/text_color_light"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/greeting">
-
-                <uz.codial6.codial.utils.MaskedEditText
-                    android:id="@+id/MET_phone_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:hint="@string/maskEditTextHint"
-                    android:inputType="phone"
-                    android:typeface="monospace"
-                    app:allowed_chars="1234567890"
-                    app:keep_hint="true"
-                    app:mask="+998 (##) ###-##-##" />
-
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:src="@drawable/ic_arrow_forward"
-                app:backgroundTint="@color/yellow"
-                app:borderWidth="0dp"
-                android:alpha="0"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/TIL_phone_number"
-                app:tint="@color/tint_color_light" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.core.widget.NestedScrollView>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
