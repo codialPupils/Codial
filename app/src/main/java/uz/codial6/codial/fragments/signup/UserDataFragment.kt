@@ -63,8 +63,6 @@ class UserDataFragment : Fragment() {
                     createImageFile()
                 )
                 getTakeImageContent.launch(photoUri)
-            } else {
-                Snackbar.make(binding.root, "Camera required", Snackbar.LENGTH_INDEFINITE).show()
             }
         }
 
