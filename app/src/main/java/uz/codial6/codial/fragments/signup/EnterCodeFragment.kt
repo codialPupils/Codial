@@ -50,6 +50,8 @@ class EnterCodeFragment : Fragment() {
         phoneNumber = arguments?.getString("phoneNumber")!!
 
         binding.done.setOnClickListener {
+            binding.progressBar.isVisible = true
+            binding.done.isGone = true
             if (binding.otpView.otp.toString()
                     .trim().length == 6 || verificationId == binding.otpView.otp
             ) {
@@ -67,9 +69,12 @@ class EnterCodeFragment : Fragment() {
     private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
         Firebase.auth.signInWithCredential(credential).addOnCompleteListener {
             if (it.isSuccessful) {
+                binding.progressBar.isGone = true
                 binding.otpView.showSuccess()
                 checkUserDatabase()
             } else {
+                binding.progressBar.isGone = true
+                binding.done.isVisible = true
                 binding.otpView.showError()
             }
         }
