@@ -9,6 +9,33 @@
         <entry key="..\:/Android Studio/Codial/app/src/main/res/layout/fragment_list_of_courses.xml" value="0.2644927536231884" />
         <entry key="..\:/Android Studio/Codial/app/src/main/res/layout/fragment_sign_up.xml" value="0.176" />
         <entry key="..\:/Android Studio/Codial/app/src/main/res/layout/fragment_splash.xml" value="0.2644927536231884" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_about.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_add_a_photo.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_arrow_down.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_arrow_forward.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_done.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_instagram.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_list.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_rating.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_round_keyboard_backspace_24.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_telegram.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/ic_youtube.xml" value="0.294" />
+        <entry key="app/src/main/res/drawable/my_rating_include_action_bar.xml" value="0.296" />
+        <entry key="app/src/main/res/layout/action_bar_for_user_settings.xml" value="0.34791666666666665" />
+        <entry key="app/src/main/res/layout/action_bar_list_of_courses.xml" value="0.34791666666666665" />
+        <entry key="app/src/main/res/layout/action_bar_rating.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/drawer_item_layout.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/fragment_list_of_courses.xml" value="0.3515625" />
+        <entry key="app/src/main/res/layout/fragment_rating.xml" value="0.3515625" />
+        <entry key="app/src/main/res/layout/fragment_user_drawer.xml" value="0.3515625" />
+        <entry key="app/src/main/res/layout/fragment_user_settings.xml" value="0.3489583333333333" />
+        <entry key="app/src/main/res/layout/support_dialg_item.xml" value="0.34791666666666665" />
+        <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.35052083333333334" />
       </map>
     </option>
   </component>

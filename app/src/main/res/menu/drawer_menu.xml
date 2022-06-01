@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/reytings"
+        android:title="Reyting"
+        android:icon="@drawable/reyting"/>
+    <item android:id="@+id/supprtlist"
+        android:title="Yo`riqnoma"
+        android:icon="@drawable/support"/>
+    <item android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Sozlash"/>
+    <item android:id="@+id/about_app"
+        android:icon="@drawable/info"
+        android:title="Biz haqimizda"/>
+
+    <item android:id="@+id/empty_1"
+        android:title=""/>
+    <item android:id="@+id/empty_4"
+        android:title=""/>
+    <item android:id="@+id/empty_5"
+        android:title=""/>
+    <item android:id="@+id/log_out"
+        android:icon="@drawable/log_out"
+        android:title="@string/chiiqish"/>
+
+</menu>

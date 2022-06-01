@@ -90,4 +90,14 @@
         android:name="uz.codial6.codial.fragments.RatingFragment"
         android:label="fragment_rating"
         tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/userDrawerFragment"
+        android:name="uz.codial6.codial.UserDrawerFragment"
+        android:label="fragment_user_drawer"
+        tools:layout="@layout/fragment_user_drawer" />
+    <fragment
+        android:id="@+id/userSettingsFragment"
+        android:name="uz.codial6.codial.UserSettingsFragment"
+        android:label="fragment_user_settings"
+        tools:layout="@layout/fragment_user_settings" />
 </navigation>

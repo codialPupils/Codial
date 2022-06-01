@@ -5,4 +5,13 @@
     <string name="telefon_raqami">Telefon raqami</string>
     <string name="hello_blank_fragment">asdasdas</string>
     <string name="maskEditTextHint">000000000</string>
+    <string name="user_image">user image</string>
+    <string name="chiiqish">Chiiqish</string>
+    <string name="image_more_drawer">image more drawer</string>
+    <string name="codial_link">Codial Link</string>
+    <string name="t_me_codial_uz">t.me/codial.uz</string>
+    <string name="biz_bilan_qanday_bog_lanish_mumkin">Biz bilan qanday bog`lanish mumkin?</string>
+    <string name="sozlash">Sozlash</string>
+    <string name="ismingiz">Ismingiz</string>
+    <string name="familyangiz">Familyangiz</string>
 </resources>
